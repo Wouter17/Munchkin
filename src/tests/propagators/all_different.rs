@@ -22,7 +22,7 @@ fn test_bounds_propagation() {
 
     solver.assert_bounds(x6, 4, 6);
     for value in 0..=3 {
-        assert!(solver.contains(x5, value));
+        assert!(!solver.contains(x5, value));
     }
 }
 
